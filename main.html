@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		
+		<title>滑 尔 滋烤脑花隆重开业啦！！！吃货们看过来！！！</title>
+
+
+
+		<script type="text/javascript" >
+			document.addEventListener("WeixinJSBridgeReady", function () {
+			    audioAutoPlay('bgaudio');//给个全局函数
+			}, false);
+			document.addEventListener('YixinJSBridgeReady', function() {
+			    audioAutoPlay('bgaudio');//给个全局函数
+			}, false);
+		</script>
+
+
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+	</head>
+	<body>
+		<audio id="bgaudio" src="music.mp3" loop="true"></audio>
+		<script type="text/javascript">
+			document.getElementById('bgaudio').play();
+		</script>
+
+		<script>
+		function audioAutoPlay(id){//全局控制播放函数
+		    var audio = document.getElementById(id),
+		        play = function(){
+		            audio.play();
+		            document.removeEventListener("touchstart",play, false);
+		        };
+		    audio.play();
+		    document.addEventListener("touchstart",play, false);
+		}
+		 
+		var isAppInside=/micromessenger/i.test(navigator.userAgent.toLowerCase())||/yixin/i.test(navigator.userAgent.toLowerCase());
+		if(!isAppInside){//给非微信易信浏览器
+		  audioAutoPlay();
+		}
+		</script> 
+
+
+
+		<div class="clearfix nav">
+			<a class="logo" href="javascript:;"></a>
+			
+		</div>
+		<div class="clear"></div>
+		<section id="slider">
+		    <div class="DB_tab25">
+		        <ul class="DB_bgSet">
+		            <li>
+		                <img src="img/banner1.jpg" alt="">
+		            </li>
+		            <li>
+		                <img src="img/banner2.jpg" alt="">
+		            </li>
+		            <li>
+		                <img src="img/banner3.jpg" alt="">
+		            </li>
+		        </ul>
+		        <ul class="DB_imgSet">
+		            <li></li>
+		            <li></li>
+		            <li></li>
+		        </ul>
+		        <div class="DB_menuWrap">
+		            <ul class="DB_menuSet">
+		                <li>
+		                    <img src="img/btn_off.png" />
+		                </li>
+		                <li>
+		                    <img src="img/btn_off.png" />
+		                </li>
+		                <li>
+		                    <img src="img/btn_off.png" />
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</section>
+
+		<section id="xc">
+			<img src="img/xc.gif" class="xc">
+			<img src="img/xcy.gif" class="xcy">
+		</section>
+		<div class="clear"></div>
+		<div class="new-wrap">
+			<p class="newfood-tit">(≥◇≤)新品热推(≥◇≤) </p>
+			<img src="img/xprt.gif" width="80%" style="padding: 0 10%">
+			<div class="newfood-box clearfix" id="newfood-table">
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item slideanim">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back ch-hover-1">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<h5>烤脑花</h5>
+					</li>
+					<li>
+						<div class="ch-item slideanim">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"></div>
+									<div class="ch-info-back ch-hover-2">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<h5>掌中宝</h5>
+					</li>
+					<li>
+						<div class="ch-item slideanim">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back  ch-hover-3">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<h5>烤鸭掌</h5>
+					</li>
+				</ul>
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item slideanim">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-4"></div>
+									<div class="ch-info-back  ch-hover-4">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<h5>烤鸡翅</h5>
+					</li>
+					<li>
+						<div class="ch-item slideanim">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-5"></div>
+									<div class="ch-info-back  ch-hover-5">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<h5>牛肉卷</h5>
+					</li>
+					<li>
+						<div class="ch-item slideanim">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-6"></div>
+									<div class="ch-info-back  ch-hover-6">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<h5>黄喉</h5>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="story-wrap">
+			<p class="story-tit">~>_<~烤脑花的故事</p>
+			<img class="title" src="img/knhgs.jpg">
+			<dl class="clearfix story-dl">
+				<img src="img/story.png" class="story">
+			</dl>
+		</div>
+
+		<div class="company-wrap">
+			<p class="company-tit">~>_<~开业大酬宾</p>
+			<dl class="clearfix company-dl">
+				<dt class="company-dt">
+					<img src="img/daijinjuan.jpg" width= "100%" height="80%" />
+				</dt>
+				<img src="img/kydcb.gif" width="80%" style="padding: 0 10%">
+
+				<dd class="company-dd">
+					<div class="com-box">
+						<img src="img/laba.gif">
+						<p>1、保存上图代金券到店消费可抵3元</p>
+					</div>
+					<div class="clear"></div>
+					<div class="com-box">
+						<img src="img/laba.gif">
+						<p>2、连续转发三天朋友圈即可免费领取一份烤脑花</p>
+					</div>
+					<div class="clear"></div>
+					<div class="com-box">
+						<img src="img/laba.gif">
+						<p>3、开业十天之间，前三天扫描下方二维码支付三元，即可享受全场六折优惠，后七天支付三元可享受全场七折优惠(转账后截图保存，到店出示)</p>
+					</div>
+					<img src="img/huodong.png" style="float: left; margin-top: 40px;" width="100%">
+				</dd>
+			</dl>
+		</div>
+
+		<div class="news-wrap">
+			<p class="news-tit">(>O<)招商引资(>O<)</p>
+			<img class="title" src="img/zsyz.jpg">
+			<dl class="clearfix news-dl">
+				<dt class="news-dt">
+					<img src="img/banner3.jpg" width="100%" />
+				</dt>
+				<dd class="news-dd">
+					<img src="img/zsjm.jpg" width="65%">
+				</dd>
+			</dl>
+		</div>
+
+
+		<div class="foot">
+			<div class="foot-wrap">
+				<!-- <p class="foot-tit">友情链接</p> -->
+				<!-- <ul class="foot-link clearfix">
+					<li class="foot-pic">
+						<a href="javascript:;"><img src="img/link6.png"/></a>
+					</li>
+					<li class="foot-pic">
+						<a href="javascript:;"><img src="img/link5.png"/></a>
+					</li>
+					<li class="foot-pic">
+						<a href="javascript:;"><img src="img/link4.png"/></a>
+					</li>
+					<li class="foot-pic">
+						<a href="javascript:;"><img src="img/link3.png"/></a>
+					</li>
+					<li class="foot-pic">
+						<a href="javascript:;"><img src="img/link2.png"/></a>
+					</li>
+					<li class="foot-pic">
+						<a href="javascript:;"><img src="img/link1.png"/></a>
+					</li>
+				</ul> -->
+				<div class="copyright">
+					<p><a href="http://www.fuhonghui.com">http://www.fuhonghui.com</a></p>
+					<p>版权所有：江苏徐州福泓汇商贸有限公司</p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.DB_tabMotionBanner.min.js"></script>
+		<script type="text/javascript">
+	    //使用jquery.DB_tabMotionBanner.min.js制作简易动画
+	        $('.DB_tab25').DB_tabMotionBanner({
+	            key: 'b28551',
+	            autoRollingTime: 2000,
+	            bgSpeed: 500,
+	            motion: {
+	            DB_1_1: { left: -50, opacity: 0, speed: 1000, delay: 1000 },
+	            DB_2_1: { top: 50, opacity: 0, speed: 1000, delay: 1000 },
+	            DB_3_1: { top: -50, opacity: 0, speed: 1000, delay: 1000 },
+	            end: null
+	            }
+	        })
+	    </script>
+	</body>
+	<!--jq调用-->
+	
+</html>
